@@ -1,0 +1,188 @@
+﻿<Page x:Class="PySec.Pages.Other"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PySec.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Other" FontFamily="Poppins">
+
+    <Border CornerRadius="8" Background="{DynamicResource SecundaryBackgroundColor}">
+        <TabControl Style="{DynamicResource TabControlStyle}">
+
+            <!-- Email Validator Tab -->
+            <TabItem Header="Email Validator" Style="{DynamicResource TabItemStyle}">
+                <Grid Margin="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Content="Email Validator" 
+                           FontSize="20" 
+                           FontWeight="Bold" 
+                           Foreground="{DynamicResource PrimaryTextColor}" 
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Top"/>
+
+                    <TextBox x:Name="ResultTextBoxEmailValidator"
+                             Grid.Row="0"
+                             Margin="0,34,0,70"
+                             FontSize="18"
+                             TextWrapping="Wrap"
+                             VerticalScrollBarVisibility="Auto"
+                             AcceptsReturn="True"
+                             IsReadOnly="True"
+                             Text="Result will be shown here."
+                             Style="{DynamicResource ModernTextBoxStyle}"
+                             Height="NaN"
+                             Grid.RowSpan="2"
+                             VerticalContentAlignment="Top"
+                             HorizontalContentAlignment="Left"/>
+
+                    <Grid Grid.Row="1" Margin="0,10,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBox x:Name="UrlInputEmailValidator"
+                                 Grid.Column="0"
+                                 Margin="0,0,10,0"
+                                 local:PlaceholderBehavior.Placeholder="Enter the Email Address..."
+                                 VerticalAlignment="Center"
+                                 Height="40"
+                                 FontSize="16"
+                                 HorizontalAlignment="Stretch"
+                                 Style="{DynamicResource ModernTextBoxStyle}"/>
+
+                        <Button Content="Fetch Data"
+                                Grid.Column="1"
+                                Width="120"
+                                Height="40"
+                                VerticalAlignment="Center"
+                                Style="{DynamicResource ModernButtonStyle}"
+                                Click="FetchEmailValidatorData"/>
+                    </Grid>
+                </Grid>
+            </TabItem>
+
+            <!-- Have I been Pwned Tab -->
+            <TabItem Header="Have I been Pwned" Style="{DynamicResource TabItemStyle}">
+                <Grid Margin="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Content="Have I been Pwned" 
+                           FontSize="20" 
+                           FontWeight="Bold" 
+                           Foreground="{DynamicResource PrimaryTextColor}" 
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Top"/>
+
+                    <TextBox x:Name="ResultTextBoxHaveIbeenPwned"
+                              Grid.Row="0"
+                              Margin="0,34,0,70"
+                              FontSize="18"
+                              TextWrapping="Wrap"
+                              VerticalScrollBarVisibility="Auto"
+                              AcceptsReturn="True"
+                              IsReadOnly="True"
+                              Text="Result will be shown here."
+                              Style="{DynamicResource ModernTextBoxStyle}"
+                              Height="NaN"
+                              Grid.RowSpan="2"
+                              VerticalContentAlignment="Top"
+                              HorizontalContentAlignment="Left"/>
+
+                    <Grid Grid.Row="1" Margin="0,10,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBox x:Name="UrlInputHaveIbeenPwned"
+                                  Grid.Column="0"
+                                  Margin="0,0,10,0"
+                                  local:PlaceholderBehavior.Placeholder="Enter the Email Address..."
+                                  VerticalAlignment="Center"
+                                  Height="40"
+                                  FontSize="16"
+                                  HorizontalAlignment="Stretch"
+                                  Style="{DynamicResource ModernTextBoxStyle}"/>
+
+                        <Button Content="Fetch Data"
+                                 Grid.Column="1"
+                                 Width="120"
+                                 Height="40"
+                                 VerticalAlignment="Center"
+                                 Style="{DynamicResource ModernButtonStyle}"
+                                 Click="FetchHaveIbeenPwnedData"/>
+                    </Grid>
+                </Grid>
+            </TabItem>
+
+
+            <!-- URL Shortener Bypasser Tab -->
+            <TabItem Header="URL Shortener Bypasser" Style="{DynamicResource TabItemStyle}">
+                <Grid Margin="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Content="URL Shortener Bypasser" 
+                           FontSize="20" 
+                           FontWeight="Bold" 
+                           Foreground="{DynamicResource PrimaryTextColor}" 
+                           HorizontalAlignment="Left" 
+                           VerticalAlignment="Top"/>
+
+                    <TextBox x:Name="ResultTextBoxURLShortenerBypasser"
+                              Grid.Row="0"
+                              Margin="0,34,0,70"
+                              FontSize="18"
+                              TextWrapping="Wrap"
+                              VerticalScrollBarVisibility="Auto"
+                              AcceptsReturn="True"
+                              IsReadOnly="True"
+                              Text="Result will be shown here."
+                              Style="{DynamicResource ModernTextBoxStyle}"
+                              Height="NaN"
+                              Grid.RowSpan="2"
+                              VerticalContentAlignment="Top"
+                              HorizontalContentAlignment="Left"/>
+
+                    <Grid Grid.Row="1" Margin="0,10,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBox x:Name="UrlInputURLShortenerBypasser"
+                                  Grid.Column="0"
+                                  Margin="0,0,10,0"
+                                  local:PlaceholderBehavior.Placeholder="Enter the URL..."
+                                  VerticalAlignment="Center"
+                                  Height="40"
+                                  FontSize="16"
+                                  HorizontalAlignment="Stretch"
+                                  Style="{DynamicResource ModernTextBoxStyle}"/>
+
+                        <Button Content="Fetch Data"
+                                 Grid.Column="1"
+                                 Width="120"
+                                 Height="40"
+                                 VerticalAlignment="Center"
+                                 Style="{DynamicResource ModernButtonStyle}"
+                                 Click="FetchURLShortenerBypasserData"/>
+                    </Grid>
+                </Grid>
+            </TabItem>
+
+        </TabControl>
+    </Border>
+</Page>
